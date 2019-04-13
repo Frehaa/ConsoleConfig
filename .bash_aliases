@@ -4,7 +4,6 @@ alias activate="source .env/bin/activate"
 alias rm="echo STOP"
 alias rmdir="echo STOP"
 alias del="rmtrash"
-alias work="cd ~/workspace"
-alias work_dynet="cd ~/workspace/sequence-labelling/code/dynet;~/Desktop/test.sh"
+alias work_bachelor="cd ~/workspace/sequence-labelling/code/;~/.dotfiles/tmux_startup.sh"
 alias pipll="pip list --format=columns"
 
