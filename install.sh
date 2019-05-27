@@ -8,7 +8,7 @@ mkdir ~/.vim/bundle
 sudo apt update
 sudo apt upgrade
 # Install
-sudo apt install vim git texlive-full cmake python3-dev build-essential trash-cli r-base gdebi-core keepass2 virtualenv
+sudo apt install vim git texlive-full cmake python3-dev build-essential trash-cli r-base gdebi-core keepass2 virtualenv htop
 # Update & upgrade
 sudo apt update
 sudo apt upgrade
