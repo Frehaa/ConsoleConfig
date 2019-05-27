@@ -6,4 +6,4 @@ alias rmdir="echo STOP"
 alias del="rmtrash"
 alias work="cd ~/workspace/sequence-labelling/code/;~/.dotfiles/tmux_startup.sh"
 alias pipll="pip list --format=columns"
-
+alias venv="virtualenv -p python3 .env"
