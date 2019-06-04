@@ -1,3 +1,4 @@
+cd ~/workspace/TestRN
 tmux new -s react-native -d 
 tmux split-window -h 
 tmux select-pane -t 0
