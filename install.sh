@@ -8,7 +8,7 @@ mkdir ~/.vim/bundle
 sudo apt update
 sudo apt upgrade
 # Install
-sudo apt install vim git texlive-full cmake python3-dev build-essential trash-cli r-base gdebi-core keepass2 virtualenv htop libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 android-sdk 
+sudo apt install vim git texlive-full cmake python3-dev build-essential trash-cli r-base gdebi-core keepass2 virtualenv htop libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 nodejs nodejs-docs npm 
 # Update & upgrade
 sudo apt update
 sudo apt upgrade

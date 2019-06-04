@@ -117,4 +117,15 @@ if ! shopt -oq posix; then
 fi
 
 
-EDITOR='vim'
+export EDITOR='vim'
+#export ANDROID_HOME='~/.lib/android-sdk'
+#export ANDROID_AVD_HOME='~/.android/avd'
+#export ANDROID_SDK_ROOT="${ANDROID_HOME}"
+#export PATH="${PATH}:${ANDROID_HOME}/tools/:${ANDROID_HOME}/platform-tools/:${ANDROID_TOOLS}"
+
+export ANDROID_HOME=$HOME/Android/Sdk/
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+

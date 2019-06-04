@@ -21,13 +21,12 @@ Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-
-
 filetype plugin indent on    " required
 
 
 set tabstop=4
 set shiftwidth=4
+set tw=80
 set expandtab
 set relativenumber
 set number
