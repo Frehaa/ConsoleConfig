@@ -10,5 +10,4 @@ tmux split-window -v
 tmux select-pane -t 0
 tmux split-window -v 
 tmux select-pane -t 0
-htop
 tmux -2 attach -t stream-viewer
