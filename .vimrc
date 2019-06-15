@@ -16,6 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'https://github.com/tpope/vim-commentary'
 
 " ...
 
