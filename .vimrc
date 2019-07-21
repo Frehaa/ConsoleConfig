@@ -18,6 +18,7 @@ Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'https://github.com/tpope/vim-commentary'
 
+Plugin 'https://github.com/eagletmt/neco-ghc'
 " ...
 
 " All of your Plugins must be added before the following line
