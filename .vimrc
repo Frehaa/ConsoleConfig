@@ -32,3 +32,4 @@ set tw=80
 set expandtab
 set relativenumber
 set number
+set visualbell
