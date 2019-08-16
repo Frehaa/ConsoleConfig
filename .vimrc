@@ -33,3 +33,4 @@ set expandtab
 set relativenumber
 set number
 set visualbell
+set vb t_vb=
