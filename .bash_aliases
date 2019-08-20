@@ -9,3 +9,8 @@ alias pipll="pip list --format=columns"
 alias venv="virtualenv -p python3 .env"
 alias emulator="~/Android/Sdk/emulator/emulator @Nexus_5X_API_28_x86"
 alias pytest="python tests.py"
+
+function ktc { kotlinc "$1" -include-runtime -d "$2.jar"; }
+
+export -f ktc
+
