@@ -129,3 +129,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/frehaa/.sdkman"
+[[ -s "/home/frehaa/.sdkman/bin/sdkman-init.sh" ]] && source "/home/frehaa/.sdkman/bin/sdkman-init.sh"
