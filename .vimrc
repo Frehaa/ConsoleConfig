@@ -28,8 +28,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set tw=80
 set expandtab
 set relativenumber
