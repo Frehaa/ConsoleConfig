@@ -1,6 +1,6 @@
 #!/bin/sh
 # directories
-mkdir ~/workspace
+mkdir ~/Workspace
 mkdir ~/.vim/
 mkdir ~/.vim/bundle
 
@@ -8,7 +8,7 @@ mkdir ~/.vim/bundle
 sudo apt update
 sudo apt upgrade
 # Install
-sudo apt install vim git texlive-full cmake python3-dev build-essential trash-cli r-base gdebi-core keepass2 virtualenv htop libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 nodejs nodejs-docs npm stack -y 
+sudo apt install vim openjdk-8-jdk texlive-full cmake python3-dev build-essential trash-cli htop haskell-platform -y 
 # Update & upgrade
 sudo apt update
 sudo apt upgrade
@@ -22,4 +22,9 @@ sudo add-apt-repository "deb https://packages.microsoft.com/repos/vscode stable 
 sudo apt update
 sudo apt install code
 # Update & install rstudio
-sudo gdebi rstudio-*.deb 
+# sudo gdebi rstudio-*.deb 
+# Google Drive
+sudo add-apt-repository ppa:alessandro-strada/ppa
+sudo apt-get update
+sudo apt-get install google-drive-ocamlfuse
+
