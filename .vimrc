@@ -14,6 +14,8 @@ Plugin 'gmarik/Vundle.vim'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
+Plugin 'tpope/vim-fugitive'
+
 Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'https://github.com/tpope/vim-commentary'
