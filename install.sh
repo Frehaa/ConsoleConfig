@@ -1,6 +1,7 @@
 #!/bin/sh
 # directories
 mkdir ~/Workspace
+mkdir ~/GoogleDrive
 mkdir ~/.vim/
 mkdir ~/.vim/bundle
 
@@ -8,7 +9,7 @@ mkdir ~/.vim/bundle
 sudo apt update
 sudo apt upgrade
 # Install
-sudo apt install vim openjdk-8-jdk texlive-full cmake python3-dev build-essential trash-cli htop haskell-platform -y 
+sudo apt install vim git texlive-full cmake python3-dev default-jdk python3-pip build-essential trash-cli keepass2 ubuntu-restricted-extras haskell-platform -y
 # Update & upgrade
 sudo apt update
 sudo apt upgrade
@@ -21,10 +22,17 @@ sudo add-apt-repository "deb https://packages.microsoft.com/repos/vscode stable 
 # Update & install code
 sudo apt update
 sudo apt install code
-# Update & install rstudio
-# sudo gdebi rstudio-*.deb 
+# Vim plugins
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/ycm-core/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
+python3 ./install.py --all
 # Google Drive
 sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt-get update
-sudo apt-get install google-drive-ocamlfuse
-
+sudo apt-get install google-drive-ocamlfuse -y
+# Repos
+ssh-keygen -t rsa -b 4096 -C "frehaa@hotmail.dk"
+# Pip 
+pip3 install ipython
