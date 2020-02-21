@@ -34,5 +34,7 @@ sudo apt-get update
 sudo apt-get install google-drive-ocamlfuse -y
 # Repos
 ssh-keygen -t rsa -b 4096 -C "frehaa@hotmail.dk"
+git config --global user.name "Frederik Haagensen"
+git config --global user.email "frehaa@hotmail.dk"
 # Pip 
 pip3 install ipython
