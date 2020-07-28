@@ -16,8 +16,9 @@ alias gp="git push"
 alias gaa="git add ."
 alias ga="git add"
 alias gc="git commit -m"
+alias unzipjp="unzip -O shift-jis"
 
-function ktc { kotlinc "$1" -include-runtime -d "$2.jar"; }
+functio ktc { kotlinc "$1" -include-runtime -d "$2.jar"; }
 
 export -f ktc
 
