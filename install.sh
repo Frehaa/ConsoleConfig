@@ -16,12 +16,13 @@ sudo apt upgrade
 # Get files
 cd ~/Downloads/
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-wget -q https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.1335-amd64.deb
+# wget -q https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.1335-amd64.deb
 # add apt
 sudo add-apt-repository "deb https://packages.microsoft.com/repos/vscode stable main"
 # Update & install code
 sudo apt update
 sudo apt install code
+# sudo gdebi rstudio-*.deb 
 # Vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/ycm-core/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe

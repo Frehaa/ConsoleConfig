@@ -32,7 +32,7 @@ filetype plugin indent on    " required
 
 set tabstop=2
 set shiftwidth=2
-set tw=80
+set tw=120
 set expandtab
 set relativenumber
 set number
