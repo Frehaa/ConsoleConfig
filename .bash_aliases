@@ -19,7 +19,7 @@ alias gc="git commit -m"
 alias unzipjp="unzip -O shift-jis"
 alias coqide2="coqide -async-proofs off -async-proofs-command-error-resilience off"
 
-function ktc { kotlinc "$1" -include-runtime -d "$2.jar"; }
+function ktc { kotlinc "$1"; }
 
 export -f ktc
 
