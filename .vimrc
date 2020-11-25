@@ -38,3 +38,4 @@ set relativenumber
 set number
 set visualbell
 set vb t_vb=
+set encoding=utf-8
