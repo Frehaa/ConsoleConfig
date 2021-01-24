@@ -29,6 +29,7 @@ Plugin 'udalov/kotlin-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+autocmd CompleteDone * pclose
 
 set tabstop=2
 set shiftwidth=2
