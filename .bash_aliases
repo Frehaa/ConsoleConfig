@@ -18,7 +18,7 @@ alias ga="git add"
 alias gc="git commit -m"
 alias unzipjp="unzip -O shift-jis"
 alias coqide2="coqide -async-proofs off -async-proofs-command-error-resilience off"
-
+alias test_mic="arecord -f cd - | aplay -"
 function ktc { kotlinc "$1"; }
 
 export -f ktc
