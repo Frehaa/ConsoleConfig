@@ -31,6 +31,7 @@ filetype plugin indent on    " required
 
 autocmd CompleteDone * pclose
 
+
 set tabstop=2
 set shiftwidth=2
 set tw=120
@@ -40,3 +41,5 @@ set number
 set visualbell
 set vb t_vb=
 set encoding=utf-8
+
+autocmd BufNewFile,BufRead *.tex set tw=80
