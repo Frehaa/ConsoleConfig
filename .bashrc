@@ -134,3 +134,4 @@ export TERM=xterm-color
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/frehaa/.sdkman"
 [[ -s "/home/frehaa/.sdkman/bin/sdkman-init.sh" ]] && source "/home/frehaa/.sdkman/bin/sdkman-init.sh"
+. "$HOME/.cargo/env"
