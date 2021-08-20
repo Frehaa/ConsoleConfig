@@ -19,7 +19,9 @@ alias gc="git commit -m"
 alias unzipjp="unzip -O shift-jis"
 alias coqide2="coqide -async-proofs off -async-proofs-command-error-resilience off"
 alias test_mic="arecord -f cd - | aplay -"
+
 function ktc { kotlinc "$1"; }
+function watch_cmd_start { watchexec -v --no-ignore -w "./${1}" cmd.exe /C start "\\\\\\\\wsl$\\\\Ubuntu-20.04\\\\home\\\\frehaa\\\\workspace\\\\Teaching\\\\an_intro_to_algs\\\\media\\\\videos\\\\scene\\\\480p15\\\\${1}"; }
 
 export -f ktc
-
+export -f watch_cmd_start
