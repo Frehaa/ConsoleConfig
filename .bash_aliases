@@ -25,8 +25,8 @@ alias f="find . -name"
 function ktc { kotlinc "$1"; }
 function watch_cmd_start { watchexec --no-ignore -w "./${1}" cmd.exe /C start '\\\\wsl$\\Ubuntu-20.04\\home\\frehaa\\workspace\\Teaching\\an_intro_to_algs\\media\\videos\\scene\\480p15\\'${1}; }
 
-function kattis { mkdir "${1}"; cd ${1}; curl -o samples.zip https://open.kattis.com/problems/${1}/file/statement/samples.zip; unzip samples.zip; trash samples.zip; }
+function kattis_rust { cargo new "${1}"; cd ${1}; curl -o samples.zip https://open.kattis.com/problems/${1}/file/statement/samples.zip; unzip samples.zip; trash samples.zip; }
 
 export -f ktc
 export -f watch_cmd_start
-export -f kattis
+export -f kattis_rust
