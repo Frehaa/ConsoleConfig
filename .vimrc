@@ -14,15 +14,9 @@ Plugin 'gmarik/Vundle.vim'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
-Plugin 'tpope/vim-fugitive'
-
 Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'https://github.com/tpope/vim-commentary'
-
-Plugin 'https://github.com/eagletmt/neco-ghc'
-
-Plugin 'udalov/kotlin-vim'
 " ...
 
 " All of your Plugins must be added before the following line
