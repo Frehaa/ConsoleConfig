@@ -26,7 +26,21 @@ alias e="explorer.exe ."
 function ktc { kotlinc "$1"; }
 function watch_cmd_start { watchexec --no-ignore -w "./${1}" cmd.exe /C start '\\\\wsl$\\Ubuntu-20.04\\home\\frehaa\\workspace\\Teaching\\an_intro_to_algs\\media\\videos\\scene\\480p15\\'${1}; }
 
-function kattis_rust { cargo new "${1}"; cd ${1}; curl -o samples.zip https://open.kattis.com/problems/${1}/file/statement/samples.zip; unzip samples.zip; trash samples.zip; }
+function kattis_rust { cargo new "${1}"; cd ${1}; curl -o samples.zip https://open.kattis.com/problems/${1}/file/statement/samples.zip; unzip samples.zip; trash samples.zip; 
+cd src; echo "use std::io::{self, BufRead};
+
+fn main() {
+    let stdin = io::stdin();
+    for line in stdin.lock().lines().map(|l| l.unwrap()) {
+        let nums: Vec<i64> = line.split_whitespace()
+            .map(|num| num.parse().unwrap())
+            .collect();
+        let a = nums[0];
+        let b = nums[1];
+    }
+}" > main.rs; cd ..;
+
+}
 
 export -f ktc
 export -f watch_cmd_start
