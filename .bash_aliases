@@ -51,7 +51,7 @@ echo "<!DOCTYPE html>
 <style>
 </style>
 </head>
-<body onload='main()'>
+<body onload='onbodyload()'>
 <canvas id='canvas' width='1920' height='1080'></canvas>
 </body>
 </html>" > "${1}.html"; 
@@ -85,7 +85,7 @@ function draw(time) {
     requestAnimationFrame(draw);
 }
 
-function main() {
+function onbodyload() {
     drawSettings.canvas = document.getElementById("canvas");
     drawSettings.canvasContex = drawSettings.canvas.getContext("2d");
 
